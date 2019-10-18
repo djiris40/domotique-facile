@@ -15,3 +15,8 @@ Près-requis
 Pansez à créé des dossier dans "/var/www/html/" , que vous nommerez css, gpio,
 Vous pouvez rajouter un dossier csv: il vous faudra un cpateur dht11 ou 22 , avec librairie Adafruit_DHT
 Vous pouvez ensuite modifier les fichiers python dans le dossier "gpio" pour les adapter a votre utilisation, en rajouter ou enlever
+
+Un foi vous page enregistrée dans la bonne extention (.html, .php, .css, .py) les transférer depuis FileZila sur votre raspberry , pour se faire  taper :
+ Hôte = ipraspberry  Identifiant = root  mot de passe = votre-pass-root  Port = 22
+ Ensuite aller dans le dossier var, puis www et enfin html =>suprimer index.html et coller le nouveau "index.html" avec les dossier css,gpio
+ 
