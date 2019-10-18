@@ -4,12 +4,6 @@
 <head>
 <link href="css/site.css" rel="stylesheet" media="all" type="text/css" />
 <meta http-equiv="content-language" content="fr" />
-<script type="text/javascript" 
-src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-<script type="text/javascript" src="lib/jquery.js"></script>
-<script src="lib/RGraph.common.core.js"></script>
-<script src="lib/RGraph.common.csv.js"></script>
-<script src="lib/RGraph.gauge.js"></script>
 <title>Serveur Domotique</title>
 <!----------------------------------------------------------------------->
 <!--PHP------------------------------------------------------------------>
@@ -26,7 +20,7 @@ if (isset($_POST['CHP'])) {
   exec("sudo python /var/www/html/gpio/ArretChp.py");
 }
 ?>
-<!--Chambre Lorlaie--------->
+<!--Chambre enfant--------->
 <?php
 if (isset($_POST['V-HL'])) {
 exec("sudo python /var/www/html/gpio/VHlor.py");
@@ -123,12 +117,8 @@ if (isset($_POST['Calexa'])) {
 <div id="title"> Bienvenue sur ton serveur domotique</div>
 <div id="menu">
 <ul id="onglet">
-  <li><a href="http://176.163.152.32:81/main.html?id=1&playtype=fv">Video Surveillance</a></li>
   <li><a href="index.html">Deconnexion</a></li>
 </ul>
-</div>
-<div id="jauge">
-<?php include("jauge.php") ?>
 </div>
    <br>
    <form method="POST" action="site.php"> 
